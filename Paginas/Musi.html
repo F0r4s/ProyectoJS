@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log y Registro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
+</head>
+<body class="bodyMusi">
+ <main>
+    <div class="contenedor_principalMusi">
+        <div class="caja_fondoMusi">
+            <div class="caja_fondologin">
+        <h3>¿Queres refinanciar un credito vigente?</h3>
+        <p>Hace click aqui para realizarlo</p>
+        <button id="inicio-sesion"> Refinanciador </button>
+            </div>
+            <div class="caja_fondoregistro">
+                <h3>¿Queres realizar una bonificacion en un pago?</h3>
+                <p> Da click en el siguiente boton para verificar las bonificaciones vigentes</p>
+                <button id="BotonRegistro"> Bonificador </button>
+                    </div>
+        </div>
+
+        <div class="cajalogin-registro">
+
+    <form action="" class="form_login" id="formRefi" method="post">
+        <h2> Refinanciador </h2>
+        <input type="number" placeholder=" Nro de cred" id="ncred" >
+        <input type="number" placeholder="Cuotas ( 12, 18 ,24 o 36" id="planRef">
+        <p id="resultadoRef"></p>
+        <button >Refinanciar</button>
+
+    </form>
+    
+    <form action="" class="form_registro" id="formBonif">
+        <h2>Bonificador</h2>
+        <input type="number" placeholder="Nivel de Mora" id="nivelbonif">
+        <input type="number" placeholder="Capital" id="capitalbonif">
+        <input type="number" placeholder="Intereses" id="interesbonif">
+        <input type="number" placeholder="Gastos Administrativos" id="gastosbonif">
+        <p id="resultadoBonif"></p>
+        <button id="resultbonif">Bonificar</button>
+
+    </form>
+
+
+
+</div>
+    
+</div>
+ </main>   
+
+ <div  class="newCliente">
+<form  id="formCliente">
+
+    <h2>Nuevo Cliente</h2>
+    <input type="text" placeholder="Nombre" id="usname">
+    <input type="text" placeholder="Apellido" id="usApellido">
+    <input type="text" placeholder="DNI" id="usdni">
+    <input type="text" placeholder="Scoring" id="usScoring">
+    <input type="number" placeholder="Nivel, si es un nuevo cliente ingresa 0" id="usnivel">
+    <input type="number" placeholder="Capital" id="uscap">
+    <input type="number" placeholder="Cuotas" id="uscuotas">
+    
+    <button id="newus">Crear Ficha</button>
+
+</form>
+</div>
+
+<div class="CalcPlanes">
+
+<form action="" class="form_login" id="formSim">
+    <h2> Calculador de Planes </h2>
+    <input type="text" placeholder=" Ingresa el monto a retirar" id="simCapital" >
+    <input type="text" placeholder="Ingresa la cantidad de cuotas para calcular el plan (12, 18 ,24 o 36" id="simCuotas">
+
+    <p id="resultadoSim"></p>
+    <button >Simulador</button>
+
+</form>
+
+</div>
+
+<div id="busqueda">
+    
+    <h1>Buscador de productos</h1>
+    <hr>
+    <div class="container">
+    <input type="text" id="formulario" class="form-control my-2, position-absolute start-70" placeholder="Ingrese el producto que desea ver">
+    <hr>
+    </div>
+    <hr>
+    <ul class="list-group , text-center" id="resultado"></ul>
+     
+    
+        
+        </div>
+
+
+
+   
+
+
+
+
+
+
+    
+
+
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+<script src="../js/Estilos.js"></script>
+<script src="../js/Musi.js"></script>
+
+</body>
+</html>
