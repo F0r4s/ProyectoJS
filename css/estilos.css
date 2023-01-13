@@ -1,231 +1,236 @@
-* { margin: 0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-    }
-    
-    body {
-        background-image: url(../Imagenes/Fondos/pawel-czerwinski-ROpTWGMYNkk-unsplash.jpg) ;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-    }
+}
 
+body {
+    background-image: url(../Imagenes/Fondos/pawel-czerwinski-ROpTWGMYNkk-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor_principal {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+
+}
+
+.caja_fondo {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 128, 255, 0.5);
+
+}
+
+.caja_fondo div {
+    margin: 100px 40px;
+    color: aliceblue;
+    transition: all 500ms;
+}
+
+.caja_fondo div p,
+.caja_fondo div button {
+    margin-top: 40px;
+
+}
+
+.caja_fondo h3 {
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja_fondo button {
+    padding: 10px 40px;
+    border: 2px solid white;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja_fondo button:hover {
+    background: white;
+    color: #46A2FD;
+
+}
+
+.cajalogin-registro {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -200px;
+    left: 10px;
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+
+}
+
+.cajalogin-registro form {
+    width: 100%;
+    padding: 80px 20px;
+    background: #fff;
+    position: absolute;
+    border-radius: 20px;
+
+
+}
+
+
+.cajalogin-registro form h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #46A2FD;
+}
+
+.cajalogin-registro form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+.cajalogin-registro form button {
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #46A2FD;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.cajalogin-registro form p {
+    text-align: center;
+    padding: 20px 80px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #0b131b;
+    color: #fff;
+    outline: none;
+
+}
+
+
+.form_login {
+    display: block;
+    opacity: 1;
+
+
+}
+
+.form_registro {
+    display: none;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 850px) {
     main {
-        width: 100%;
-        padding: 20px;
-        margin: auto;
-        margin-top: 100px;
-    }
-
-    .contenedor_principal {
-        width: 100%;
-        max-width: 800px;
-        margin: auto;
-        position: relative;
+        margin-top: 50px;
 
     }
 
     .caja_fondo {
-        width: 100%;
-        padding: 10px 20px;
-        display: flex;
-        justify-content: center;
-        backdrop-filter: blur(10px);
-        background-color: rgba(0, 128 , 255, 0.5);
-
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
     }
 
     .caja_fondo div {
-        margin: 100px 40px;
-        color: aliceblue;
-        transition: all 500ms;
-    }
-
-    .caja_fondo div p,
-    .caja_fondo div button {
-        margin-top: 40px;
-
-    }
-
-    .caja_fondo h3 {
-        font-weight: 400;
-        font-size: 26px;
-    }
-
-    .caja_fondo button {
-        padding: 10px 40px;
-        border: 2px solid white;
-        background: transparent;
-        font-size: 14px;
-        font-weight: 600;
-        cursor: pointer;
-        color: white;
-        outline: none;
-        transition: all 300ms;
-    }
-
-    .caja_fondo button:hover {
-        background: white;
-        color: #46A2FD  ;
+        margin: 0px;
+        position: absolute;
 
     }
 
     .cajalogin-registro {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        max-width: 380px;
-        position:relative;
-        top: -200px;
-        left: 10px;
-        transition: left 500ms   cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        
-
+        top: -10px;
+        left: -5px;
+        margin: auto;
     }
 
-    .cajalogin-registro form{
-        width: 100%;
-        padding: 80px 20px;
-        background: #fff;
-        position: absolute;
-        border-radius: 20px;
-
-
-    }
-    
-
-    .cajalogin-registro form h2 {
-        font-size: 30px;
-        text-align: center;
-        margin-bottom: 20px;
-        color:#46A2FD;
+    .cajalogin-registro form {
+        position: relative;
     }
 
-    .cajalogin-registro form input {
-        width: 100%;
-        padding: 10px;
-        margin-top: 20px;
-        border: none;
-        background: #f2f2f2;
-        font-size: 16px;
-        outline: none;
-    }
-
-    .cajalogin-registro form button {
-        padding: 10px 40px;
-        margin-top: 40px;
-        border: none;
-        font-size: 14px;
-        background: #46A2FD;
-        color: #fff;
-        cursor: pointer;
-        outline: none;
-
-    }
-
-    .cajalogin-registro form p{
-        text-align: center;
-        padding: 20px 80px;
-        margin-top: 40px;
-        border: none;
-        font-size: 14px;
-        background: #0b131b;
-        color: #fff;
-        outline: none;
-
-    }
+}
 
 
-    .form_login {
-        display: block;
-        opacity: 1;
+/*Menu*/
 
+.bodyMenu {
+    background-image: url(../Imagenes/Fondos/george-pagan-iii-s-77IdplLv4-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 
-    }
+}
 
-    .form_registro {
-        display: none;
-    }
-
-    /* Responsive */
-
-    @media screen and ( max-width: 850px ) {
-        main{
-            margin-top: 50px;
-
-        }
-        .caja_fondo {
-            max-width: 350px;
-            height:300px;
-            flex-direction: column;
-            margin: auto;
-        }
-
-        .caja_fondo div {
-            margin: 0px;
-            position:absolute;
-
-        }
-
-        .cajalogin-registro {
-            top: -10px;
-            left: -5px;
-            margin: auto;
-        }
-
-        .cajalogin-registro form {
-            position: relative;
-        }
-
-    }
-
-
-    /*Menu*/
-
-     .bodyMenu {
-        background-image: url(../Imagenes/Fondos/george-pagan-iii-s-77IdplLv4-unsplash.jpg) ;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-
-    }
-.seleccion{
+.seleccion {
     color: #fff;
 }
 
-    .caja_fondo2 {
-        width: 100%;
-        height: 380px;
-        padding: 30px ;
-        display: flex;
-        justify-content: space-around;
-        backdrop-filter: blur(10px);
-        background-color: rgba(169, 177, 185, 0.5);
+.caja_fondo2 {
+    width: 100%;
+    height: 380px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    backdrop-filter: blur(10px);
+    background-color: rgba(169, 177, 185, 0.5);
 
-    }
- div .CredArg {
+}
+
+div .CredArg {
     display: block;
     position: relative;
-        height: 300px;
-        width: 300px;
-        background-repeat: no-repeat;
-        background-position: 50%;
-        border-radius: 50%;
-        background-size: 100% auto;
-        transition: 0.5s;
-        object-fit: cover;
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+    transition: 0.5s;
+    object-fit: cover;
 
- }
- .CredArg:hover {
+}
+
+.CredArg:hover {
     transform: scale(1.2);
- }
+}
 
 
- div .Musi {
+div .Musi {
     display: block;
     position: relative;
     height: 300px;
@@ -240,12 +245,12 @@
 
 .Musi:hover {
     transform: scale(1.2);
- }
+}
 
 
- /*Refi- Musi*/
- .bodyMusi {
-    background-image: url(../Imagenes/Fondos/scott-webb-mslrSX69KvQ-unsplash.jpg) ;
+/*Refi- Musi*/
+.bodyMusi {
+    background-image: url(../Imagenes/Fondos/scott-webb-mslrSX69KvQ-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -303,7 +308,7 @@
 
 .caja_fondoMusi button:hover {
     background: white;
-    color: #a81818  ;
+    color: #a81818;
 
 }
 
@@ -312,16 +317,16 @@
     align-items: center;
     width: 100%;
     max-width: 280px;
-    position:relative;
+    position: relative;
     top: -650px;
     left: 10px;
-    
+
 
 }
 
 
 
-.newCliente form{
+.newCliente form {
     width: 100%;
     top: 20px;
     height: 700px;
@@ -335,7 +340,7 @@
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
-    color:#a81818 ;
+    color: #a81818;
 }
 
 .newCliente form input {
@@ -353,7 +358,7 @@
     margin-top: 40px;
     border: none;
     font-size: 14px;
-    background: #a81818 ;
+    background: #a81818;
     color: #fff;
     cursor: pointer;
     outline: none;
@@ -365,17 +370,17 @@
     align-items: center;
     width: 100%;
     max-width: 180px;
-    position:relative;
+    position: relative;
     top: -600px;
     right: -1130px;
-    
-    
+
+
 
 }
 
 
 
-.CalcPlanes form{
+.CalcPlanes form {
     width: 100%;
     top: 20px;
     height: 380px;
@@ -389,7 +394,7 @@
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
-    color:#a81818 ;
+    color: #a81818;
 }
 
 .CalcPlanes form input {
@@ -407,7 +412,7 @@
     margin-top: 40px;
     border: none;
     font-size: 14px;
-    background: #a81818 ;
+    background: #a81818;
     color: #fff;
     cursor: pointer;
     outline: none;
@@ -417,34 +422,38 @@
 h1 {
     text-align: center;
 }
-h5{
+
+h5 {
     text-align: center;
-}
-p{
-    text-align: center;
-}
-input{
-    width: 150px;
-   
 }
 
-div{
+p {
+    text-align: center;
+}
+
+input {
+    width: 150px;
+
+}
+
+div {
     margin: .5rem;
     width: 100%;
-   
+
 }
+
 .container {
-    display:flex;
+    display: flex;
 }
 
 #formulario {
     width: 100%;
     max-width: 600px;
     right: 360px;
-   
+
 }
 
-#resultado{
+#resultado {
     width: 100%;
     max-width: 800px;
 
@@ -466,7 +475,7 @@ div{
 
 /*---------Cred Arg*---------*/
 .bodyCarg {
-    background-image: url(../Imagenes/Fondos/ash-edmonds-gcINRBbUxl0-unsplash.jpg) ;
+    background-image: url(../Imagenes/Fondos/ash-edmonds-gcINRBbUxl0-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -524,7 +533,7 @@ div{
 
 .caja_fondoCa button:hover {
     background: white;
-    color: #46A2FD  ;
+    color: #46A2FD;
 
 }
 
@@ -533,16 +542,16 @@ div{
     align-items: center;
     width: 100%;
     max-width: 280px;
-    position:relative;
+    position: relative;
     top: -650px;
     left: 10px;
-    
+
 
 }
 
 
 
-.newClienteCa form{
+.newClienteCa form {
     width: 100%;
     top: 20px;
     height: 700px;
@@ -556,7 +565,7 @@ div{
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
-    color:#46A2FD;
+    color: #46A2FD;
 }
 
 .newClienteCa form input {
@@ -586,17 +595,17 @@ div{
     align-items: center;
     width: 100%;
     max-width: 180px;
-    position:relative;
+    position: relative;
     top: -600px;
     right: -1130px;
-    
-    
+
+
 
 }
 
 
 
-.CalcPlanesCa form{
+.CalcPlanesCa form {
     width: 100%;
     top: 20px;
     height: 380px;
@@ -610,7 +619,7 @@ div{
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
-    color:#46A2FD;
+    color: #46A2FD;
 }
 
 .CalcPlanesCa form input {
@@ -638,34 +647,38 @@ div{
 h1 {
     text-align: center;
 }
-h5{
+
+h5 {
     text-align: center;
-}
-p{
-    text-align: center;
-}
-input{
-    width: 150px;
-   
 }
 
-div{
+p {
+    text-align: center;
+}
+
+input {
+    width: 150px;
+
+}
+
+div {
     margin: .5rem;
     width: 100%;
-   
+
 }
+
 .container {
-    display:flex;
+    display: flex;
 }
 
 #formulario {
     width: 100%;
     max-width: 600px;
     right: 360px;
-   
+
 }
 
-#resultadoCa{
+#resultadoCa {
     width: 100%;
     max-width: 800px;
 
@@ -688,4 +701,10 @@ div{
 
 #busc {
     color: #fff;
+}
+
+
+#footer {
+    color: #fff;
+    margin-right: -1000px;
 }
