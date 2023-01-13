@@ -1,7 +1,7 @@
 /* Musi */
 
 class Credito {
-    constructor(nombre, apellido, dni, scoring,nro , nivel, capital, cuotas, intereses) {
+    constructor(nombre, apellido, dni, scoring,nro , nivel, capital, cuotas, intereses, gastos) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
@@ -11,14 +11,15 @@ class Credito {
         this.capital = capital;
         this.cuotas = cuotas;
         this.intereses = intereses;
+        this.gastos = gastos;
         
     }
 }
 
-const credito1 = new Credito("pepe","foris", 14125388, 123 , 1, 51, 1000, 2, 300);
-const credito2 = new Credito("Lio","Messi", 13285152, 455 , 2, 1, 10000, 3000);
-const credito3 = new Credito("Leonel","Messi", 13285152, 455 , 2, 1, 10000, 3000);
-const credito4 = new Credito("Leopoldo","Messi", 13285152, 455 , 2, 1, 10000, 3000);
+const credito1 = new Credito("pepe","foris", 14125388, 123 , 1, 51, 1000, 2, 300, 150);
+const credito2 = new Credito("Lio","Messi", 13285152, 451 , 2, 0, 10000, 12, 1500, 750);
+const credito3 = new Credito("Leonel","Messi", 13285152, 452 , 3, 2, 10000, 24, 1500, 750);
+const credito4 = new Credito("Leopoldo","Messi", 13285152, 655 , 4, 3, 10000, 36, 1500, 750);
 
 
 const arrayCreditos = [credito1, credito2, credito3, credito4];
@@ -62,12 +63,13 @@ function newUser() {
     let capital = document.getElementById("uscap").value;
     let cuotas = document.getElementById("uscuotas").value;
     let intereses = interes();
+    let gastos = intereses /2;
     
     
     let nro = Math.ceil(Math.random() * 100000);
 
     
-    let credito = new Credito(nombre, apellido, dni, scoring, nro, nivel, capital, cuotas, intereses);
+    let credito = new Credito(nombre, apellido, dni, scoring, nro, nivel, capital, cuotas, intereses, gastos);
     arrayCreditos.push(credito);
     console.log(arrayCreditos);
 
@@ -181,7 +183,7 @@ const filtrar = () =>{
 
         if ( nombre.indexOf(texto) !== -1){
             resultado.innerHTML += `
-            <li class="list-group-item ">${credito.nombre} - ${credito.apellido} - Nro: ${credito.nro} - Capital:${credito.capital} </li>
+            <li class="list-group-item "> Nombre: ${credito.nombre}  ${credito.apellido} - Nro: ${credito.nro} - Capital:${credito.capital} - Intereses: ${credito.intereses} - GastosAdm: ${credito.gastos} - Nivel: ${credito.nivel} </li>
             `
         }
 

@@ -104,6 +104,7 @@ function nuevoUsuario() {
      formLogin.addEventListener ('submit' , (e) =>{
          e.preventDefault();
          login();
+
          
 
      
@@ -127,13 +128,17 @@ if (ingreso) {
     Swal.fire({
         toast: 'true',
         icon: 'success',
-        title: user + 'inicio sesion',
+        title: user + '  inicio sesion',
         position: 'bottom-end'
         
 
       }) ;
 
-    window.location.href ="../Paginas/menu.html"   ;
+	setTimeout(() => {
+		document.location.href = "../Paginas/menu.html";
+	}, 5000);
+     
+
 
      }
 

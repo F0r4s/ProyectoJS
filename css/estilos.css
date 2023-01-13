@@ -138,6 +138,7 @@
 
     }
 
+
     .form_login {
         display: block;
         opacity: 1;
@@ -192,7 +193,9 @@
         background-attachment: fixed;
 
     }
-
+.seleccion{
+    color: #fff;
+}
 
     .caja_fondo2 {
         width: 100%;
@@ -300,7 +303,7 @@
 
 .caja_fondoMusi button:hover {
     background: white;
-    color: #46A2FD  ;
+    color: #a81818  ;
 
 }
 
@@ -332,7 +335,7 @@
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
-    color:#46A2FD;
+    color:#a81818 ;
 }
 
 .newCliente form input {
@@ -350,7 +353,7 @@
     margin-top: 40px;
     border: none;
     font-size: 14px;
-    background: #46A2FD;
+    background: #a81818 ;
     color: #fff;
     cursor: pointer;
     outline: none;
@@ -386,7 +389,7 @@
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
-    color:#46A2FD;
+    color:#a81818 ;
 }
 
 .CalcPlanes form input {
@@ -404,7 +407,7 @@
     margin-top: 40px;
     border: none;
     font-size: 14px;
-    background: #46A2FD;
+    background: #a81818 ;
     color: #fff;
     cursor: pointer;
     outline: none;
@@ -461,3 +464,228 @@ div{
     color: beige;
 }
 
+/*---------Cred Arg*---------*/
+.bodyCarg {
+    background-image: url(../Imagenes/Fondos/ash-edmonds-gcINRBbUxl0-unsplash.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.contenedor_principalMusi {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    left: 50px;
+    top: -100px;
+    position: relative;
+}
+
+.caja_fondoCa {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(72, 201, 233, 0.555);
+
+}
+
+.caja_fondoCa div {
+    margin: 100px 40px;
+    color: aliceblue;
+    transition: all 500ms;
+}
+
+.caja_fondoCa div p,
+.caja_fondoCa div button {
+    margin-top: 40px;
+
+}
+
+.caja_fondoCa h3 {
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja_fondoCa button {
+    padding: 10px 40px;
+    border: 2px solid white;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja_fondoCa button:hover {
+    background: white;
+    color: #46A2FD  ;
+
+}
+
+.newClienteCa {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 280px;
+    position:relative;
+    top: -650px;
+    left: 10px;
+    
+
+}
+
+
+
+.newClienteCa form{
+    width: 100%;
+    top: 20px;
+    height: 700px;
+    padding: 80px 20px;
+    background: #fff;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.newClienteCa form h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color:#46A2FD;
+}
+
+.newClienteCa form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+.newClienteCa form button {
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #46A2FD;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.CalcPlanesCa {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 180px;
+    position:relative;
+    top: -600px;
+    right: -1130px;
+    
+    
+
+}
+
+
+
+.CalcPlanesCa form{
+    width: 100%;
+    top: 20px;
+    height: 380px;
+    padding: 40px 20px;
+    background: #fff;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.CalcPlanesCa form h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color:#46A2FD;
+}
+
+.CalcPlanesCa form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+.CalcPlanesCa form button {
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #46A2FD;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+
+}
+
+h1 {
+    text-align: center;
+}
+h5{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+input{
+    width: 150px;
+   
+}
+
+div{
+    margin: .5rem;
+    width: 100%;
+   
+}
+.container {
+    display:flex;
+}
+
+#formulario {
+    width: 100%;
+    max-width: 600px;
+    right: 360px;
+   
+}
+
+#resultadoCa{
+    width: 100%;
+    max-width: 800px;
+
+
+
+}
+
+#resultadoCa li {
+    border: 2px solid black;
+    display: block;
+    right: -260px;
+
+}
+
+#resultadoCa li:hover {
+    background-color: rgb(97, 165, 211);
+    color: beige;
+}
+
+
+#busc {
+    color: #fff;
+}
