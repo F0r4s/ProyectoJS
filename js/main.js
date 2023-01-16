@@ -135,7 +135,7 @@ function login() {
         });
 
         setTimeout(() => {
-            window.location.href = "../Paginas/menu.html";
+            window.location.href = "../paginas/menu.html";
         }, 5000);
 
 
