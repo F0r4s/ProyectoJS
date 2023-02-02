@@ -40,7 +40,7 @@ const formCliente = document. getElementById("formCliente");
 
 formCliente.addEventListener ('submit' , (e) =>{
     e.preventDefault();
-    newUser();
+    validar1();
     limpiar();
 
 } );
@@ -73,9 +73,38 @@ function newUser() {
     arrayCreditos.push(credito);
     console.log(arrayCreditos);
 
+    Swal.fire({
+        icon: 'success',
+        title: 'Felicidades!, nuevo cliente cargado' ,
+    });
+
 
 
      }
+
+     function validar1() {
+        let nombre = document.getElementById("usname").value;
+        let apellido = document.getElementById("usApellido").value;
+        let dni = document.getElementById("usdni").value;
+        let scoring = document.getElementById("usScoring").value;
+        let nivel = document.getElementById("usnivel").value;
+        let capital = document.getElementById("uscap").value;
+        let cuotas = document.getElementById("uscuotas").value;
+    
+        if (nombre === '' || apellido === '' || dni === '' || scoring === '' || nivel === '' || cuotas === '' || capital === '') {
+
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Olvidaste algun dato, veriifica',
+    
+            })
+        }
+        else {
+            newUser();
+        }
+    
+    }
 
 
 const formRefi = document. getElementById("formRefi");

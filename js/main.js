@@ -90,7 +90,10 @@ function nuevoUsuario() {
         });
 
         if (optimo) {
-            alert('Bienvenido a la Empresa ' + nombre + "!")
+            Swal.fire({
+                icon: 'success',
+                title: 'Bienvenido a la empresa' + ' ' + nombre + '!' ,
+            });
         };
 
     })()

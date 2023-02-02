@@ -473,6 +473,12 @@ div {
     color: beige;
 }
 
+#resultadoSim {
+    background-color: #0b131b;
+    color: #fff;
+    
+}
+
 /*---------Cred Arg*---------*/
 .bodyCarg {
     background-image: url(../Imagenes/Fondos/ash-edmonds-gcINRBbUxl0-unsplash.jpg);
